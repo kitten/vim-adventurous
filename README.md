@@ -11,9 +11,14 @@ Based on the [Dracula syntax theme](https://draculatheme.com/).
 **How?** This is automatically generated! It takes Dracula's colours and matches them with
 a different colour palette.
 
+## Need Some Eyecandy?
+
+![Screenshot](https://raw.githubusercontent.com/philpl/vim-adventurous/master/screenshot.jpg)
+
 ## Contributing
 
 This is a *work in progress*.
 
 Please report any peculiar color combinations or circumstances under which code is rendered unreadable and ugly.
 Please also try to attach a screenshot, so it is easier to recognise the problem.
+
