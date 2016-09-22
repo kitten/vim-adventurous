@@ -11,7 +11,6 @@ highlight clear
 if exists("syntax_on")
   syntax reset
 endif
-
 let g:colors_name = "adventurous"
 
 hi Cursor ctermfg=234 ctermbg=255 cterm=NONE guifg=#191B1F guibg=#F8F8F2 gui=NONE
@@ -29,8 +28,10 @@ hi IncSearch ctermfg=234 ctermbg=220 cterm=NONE guifg=#191B1F guibg=#FFC620 gui=
 hi Search ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
 hi Directory ctermfg=32 ctermbg=NONE cterm=NONE guifg=#277BD3 guibg=NONE gui=NONE
 hi Folded ctermfg=32 ctermbg=234 cterm=NONE guifg=#277BD3 guibg=#191B1F gui=NONE
+
 " hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#f8f8f2 guibg=#282a36 gui=NONE
 " hi LineNr ctermfg=59 ctermbg=235 cterm=NONE guifg=#64666d guibg=#282a36 gui=NONE
+
 hi Normal ctermfg=255 ctermbg=NONE cterm=NONE guifg=#F8F8F2 guibg=NONE gui=NONE
 hi LineNr ctermfg=238 ctermbg=NONE cterm=NONE guifg=#404449 guibg=NONE gui=NONE
 hi Boolean ctermfg=32 ctermbg=NONE cterm=NONE guifg=#277BD3 guibg=NONE gui=NONE
@@ -110,7 +111,11 @@ hi cssClassName ctermfg=70 ctermbg=NONE cterm=NONE guifg=#4BAE16 guibg=NONE gui=
 hi cssValueLength ctermfg=32 ctermbg=NONE cterm=NONE guifg=#277BD3 guibg=NONE gui=NONE
 hi cssCommonAttr ctermfg=117 ctermbg=NONE cterm=NONE guifg=#7FD6FA guibg=NONE gui=NONE
 hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+
 " end of document
+
 hi NonText ctermbg=NONE cterm=NONE guifg=#404449 guibg=NONE gui=NONE
+
 " invisibles
+
 hi SpecialKey ctermbg=NONE cterm=NONE guifg=#404449 guibg=NONE gui=NONE

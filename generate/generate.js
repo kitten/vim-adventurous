@@ -86,8 +86,21 @@ function transform(str) {
 }
 
 class TransformColors extends stream.Transform {
+  constructor(opts) {
+    super(opts)
+
+    this.lastLineComment = true
+    this.lastLineHi = true
+  }
+
   _transform(chunk, enc, cb) {
     const str = chunk.toString()
+
+    const _lastLineComment = this.lastLineComment
+    this.lastLineComment = str.startsWith('"')
+
+    const _lastLineHi = this.lastLineHi
+    this.lastLineHi = str.startsWith('hi ')
 
     if (str.startsWith('hi ')) {
       const parsed = str.split(' ')
@@ -99,15 +112,19 @@ class TransformColors extends stream.Transform {
         .map(transform)
 
       this.push([
-        'hi',
+        (this.lastLineHi && !_lastLineHi) ? '\nhi' : 'hi',
         name,
         ...rest
       ].join(' ') + '\n')
-    } else {
-      this.push(str + '\n')
+
+      return cb()
+    } else if (this.lastLineComment && !_lastLineComment) {
+      this.push('\n' + str + '\n')
+      return cb()
     }
 
-    cb()
+    this.push(str + '\n')
+    return cb()
   }
 }
 

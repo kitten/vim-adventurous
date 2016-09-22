@@ -1,23 +1,18 @@
-" Dracula Theme v1.2.0
+" Adventurous Theme v1.0.0
 "
-" https://github.com/zenorocha/dracula-theme
+" https://github.com/philpl/vim-adventurous
 "
-" Copyright 2015, All rights reserved
+" Licensed under the CC0-1.0 license
 "
-" Code licensed under the MIT license
-" http://zenorocha.mit-license.org
+" @author Phil Plueckthun <phil@plckthn.me>
 "
-" @author Éverton Ribeiro <nuxlli@gmail.com>
-" @author Zeno Rocha <hi@zenorocha.com>
-
 set background=dark
 highlight clear
-
 if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name = "dracula"
+let g:colors_name = "adventurous"
 
 hi Cursor ctermfg=17 ctermbg=231 cterm=NONE guifg=#282a36 guibg=#f8f8f0 gui=NONE
 hi Visual ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#44475a gui=NONE
