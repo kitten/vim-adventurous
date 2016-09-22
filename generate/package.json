@@ -1,0 +1,22 @@
+{
+  "name": "vim-adventurous",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The generator that turns a syntax into Adventure Time goodness",
+  "main": "generate.js",
+  "author": "Phil Plückthun <phil@plckthn.me> (https://github.com/philpl)",
+  "bugs": {
+    "url": "https://github.com/philplckthun/vim-adventurous/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philpl/vim-adventurous.git"
+  },
+  "license": "CC0-1.0",
+  "dependencies": {
+    "byline": "^5.0.0",
+    "color-diff": "^1.0.0",
+    "goethe": "^1.1.4",
+    "x256": "0.0.2"
+  }
+}
