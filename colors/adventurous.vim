@@ -47,7 +47,7 @@ hi DiffText ctermfg=255 ctermbg=32 cterm=bold guifg=#F8F8F2 guibg=#404449 gui=bo
 hi ErrorMsg ctermfg=255 ctermbg=168 cterm=NONE guifg=#F8F8F2 guibg=#DE347A gui=NONE
 hi WarningMsg ctermfg=255 ctermbg=168 cterm=NONE guifg=#F8F8F2 guibg=#DE347A gui=NONE
 hi Float ctermfg=32 ctermbg=NONE cterm=NONE guifg=#277BD3 guibg=NONE gui=NONE
-hi Function ctermfg=70 ctermbg=NONE cterm=italic guifg=#4BAE16 guibg=NONE gui=italic
+hi Function ctermfg=70 ctermbg=NONE cterm=NONE guifg=#4BAE16 guibg=NONE gui=NONE
 hi Identifier ctermfg=117 ctermbg=NONE cterm=italic guifg=#7FD6FA guibg=NONE gui=italic
 hi Keyword ctermfg=168 ctermbg=NONE cterm=NONE guifg=#DE347A guibg=NONE gui=NONE
 hi Label ctermfg=220 ctermbg=NONE cterm=NONE guifg=#FFC620 guibg=NONE gui=NONE
