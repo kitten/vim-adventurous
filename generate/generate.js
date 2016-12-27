@@ -95,7 +95,7 @@ class TransformColors extends stream.Transform {
   }
 
   _transform(chunk, enc, cb) {
-    const str = chunk.toString()
+    const str = chunk.toString().trim()
 
     const _lastLineComment = this.lastLineComment
     this.lastLineComment = str.startsWith('"')

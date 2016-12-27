@@ -9,7 +9,7 @@
 set background=dark
 highlight clear
 if exists("syntax_on")
-  syntax reset
+syntax reset
 endif
 let g:colors_name = "adventurous"
 
@@ -29,11 +29,13 @@ hi Search ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=un
 hi Directory ctermfg=32 ctermbg=NONE cterm=NONE guifg=#277BD3 guibg=NONE gui=NONE
 hi Folded ctermfg=32 ctermbg=234 cterm=NONE guifg=#277BD3 guibg=#191B1F gui=NONE
 if has('gui_running') || exists('neovim_dot_app')
-  hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#f8f8f2 guibg=#282a36 gui=NONE
-  hi LineNr ctermfg=59 ctermbg=235 cterm=NONE guifg=#64666d guibg=#282a36 gui=NONE
+
+hi Normal ctermfg=255 ctermbg=234 cterm=NONE guifg=#F8F8F2 guibg=#191B1F gui=NONE
+hi LineNr ctermfg=238 ctermbg=234 cterm=NONE guifg=#404449 guibg=#191B1F gui=NONE
 else
-  hi Normal ctermfg=231 ctermbg=NONE cterm=NONE guifg=#f8f8f2 guibg=NONE gui=NONE
-  hi LineNr ctermfg=59 ctermbg=NONE cterm=NONE guifg=#64666d guibg=NONE gui=NONE
+
+hi Normal ctermfg=255 ctermbg=NONE cterm=NONE guifg=#F8F8F2 guibg=NONE gui=NONE
+hi LineNr ctermfg=238 ctermbg=NONE cterm=NONE guifg=#404449 guibg=NONE gui=NONE
 endif
 
 hi Boolean ctermfg=32 ctermbg=NONE cterm=NONE guifg=#277BD3 guibg=NONE gui=NONE
