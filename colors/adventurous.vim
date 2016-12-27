@@ -28,7 +28,7 @@ hi IncSearch ctermfg=234 ctermbg=220 cterm=NONE guifg=#191B1F guibg=#FFC620 gui=
 hi Search ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
 hi Directory ctermfg=32 ctermbg=NONE cterm=NONE guifg=#277BD3 guibg=NONE gui=NONE
 hi Folded ctermfg=32 ctermbg=234 cterm=NONE guifg=#277BD3 guibg=#191B1F gui=NONE
-if has('gui_running')
+if has('gui_running') || exists('neovim_dot_app')
   hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#f8f8f2 guibg=#282a36 gui=NONE
   hi LineNr ctermfg=59 ctermbg=235 cterm=NONE guifg=#64666d guibg=#282a36 gui=NONE
 else
