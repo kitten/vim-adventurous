@@ -28,12 +28,14 @@ hi IncSearch ctermfg=234 ctermbg=220 cterm=NONE guifg=#191B1F guibg=#FFC620 gui=
 hi Search ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
 hi Directory ctermfg=32 ctermbg=NONE cterm=NONE guifg=#277BD3 guibg=NONE gui=NONE
 hi Folded ctermfg=32 ctermbg=234 cterm=NONE guifg=#277BD3 guibg=#191B1F gui=NONE
+if has('gui_running')
+  hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#f8f8f2 guibg=#282a36 gui=NONE
+  hi LineNr ctermfg=59 ctermbg=235 cterm=NONE guifg=#64666d guibg=#282a36 gui=NONE
+else
+  hi Normal ctermfg=231 ctermbg=NONE cterm=NONE guifg=#f8f8f2 guibg=NONE gui=NONE
+  hi LineNr ctermfg=59 ctermbg=NONE cterm=NONE guifg=#64666d guibg=NONE gui=NONE
+endif
 
-" hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#f8f8f2 guibg=#282a36 gui=NONE
-" hi LineNr ctermfg=59 ctermbg=235 cterm=NONE guifg=#64666d guibg=#282a36 gui=NONE
-
-hi Normal ctermfg=255 ctermbg=NONE cterm=NONE guifg=#F8F8F2 guibg=NONE gui=NONE
-hi LineNr ctermfg=238 ctermbg=NONE cterm=NONE guifg=#404449 guibg=NONE gui=NONE
 hi Boolean ctermfg=32 ctermbg=NONE cterm=NONE guifg=#277BD3 guibg=NONE gui=NONE
 hi Character ctermfg=32 ctermbg=NONE cterm=NONE guifg=#277BD3 guibg=NONE gui=NONE
 hi Comment ctermfg=32 ctermbg=NONE cterm=italic guifg=#277BD3 guibg=NONE gui=italic
