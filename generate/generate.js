@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+const path = require('path')
 const fs = require('fs')
 const stream = require('stream')
 const Color = require('goethe').default
@@ -128,8 +129,13 @@ class TransformColors extends stream.Transform {
   }
 }
 
-var draculaSyntax = byline.createStream(fs.createReadStream('dracula.vim'))
-var adventurousSyntax = fs.createWriteStream('../colors/adventurous.vim')
+const draculaSyntax = byline.createStream(
+  fs.createReadStream(path.join(__dirname, 'template.vim'))
+)
+
+const adventurousSyntax = fs.createWriteStream(
+  path.join(__dirname, '../colors/adventurous.vim')
+)
 
 draculaSyntax
   .pipe(new TransformColors())
